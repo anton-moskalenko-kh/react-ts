@@ -1,0 +1,13 @@
+.commonBlock {
+    display: flex;
+    margin: 10px 0 0 20px;
+}
+
+.users {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.posts {
+    width: 50%;
+}

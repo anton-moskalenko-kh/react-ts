@@ -1,0 +1,14 @@
+.userBlock {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.userBlock button {
+    font-size: 20px;
+    padding: 5px;
+    background-color: khaki;
+    border: 1px solid khaki;
+    border-radius: 5px;
+    cursor: pointer;
+}
