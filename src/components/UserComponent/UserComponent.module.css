@@ -1,0 +1,11 @@
+.userBlock {
+    border: 1px solid black;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.userBlock h3 {
+    color: red;
+}

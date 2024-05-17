@@ -1,0 +1,11 @@
+.postBlock {
+    border: 1px solid black;
+    background-color: ghostwhite;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.postBlock h3 {
+    color: green;
+}

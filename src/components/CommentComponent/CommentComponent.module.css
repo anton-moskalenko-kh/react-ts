@@ -1,0 +1,11 @@
+.commentBlock {
+    border: 1px solid black;
+    background-color: lavenderblush;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.commentBlock h3 {
+    color: blue;
+}

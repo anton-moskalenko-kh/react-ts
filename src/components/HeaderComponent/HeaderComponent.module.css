@@ -1,0 +1,16 @@
+.navBlock {
+    display: flex;
+    padding: 20px 0;
+}
+
+.navBlock a {
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+
+.navBlock a:hover {
+    text-decoration: underline;
+}
+
