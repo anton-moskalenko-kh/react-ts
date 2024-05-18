@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {IUserModel} from "../../models/IUserModel";
-import {userApiService} from "../../services/api.services";
+import {userApiService} from "../../services/users.api.services";
 import UserComponent from "../UserComponent/UserComponent";
 
 const UsersComponent = () => {
@@ -13,7 +13,7 @@ const UsersComponent = () => {
 
     return (
         <div>
-            {users.map(user => <UserComponent key={user.id} id={user.id} name={user.name} username={user.username} email={user.email}/>)}
+            {users.map(user => <UserComponent key={user.id} user={user}/>)}
         </div>
     );
 };

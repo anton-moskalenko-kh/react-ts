@@ -9,3 +9,13 @@
 .userBlock h3 {
     color: red;
 }
+
+.userBlock button {
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}

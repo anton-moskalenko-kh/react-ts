@@ -1,13 +1,22 @@
 import React, {FC} from 'react';
 import {IPostModel} from "../../models/IPostModel";
 import styles from './PostComponent.module.css'
+import {useNavigate} from "react-router-dom";
 
-const PostComponent: FC<IPostModel> = ({id, body, userId, title}) => {
+interface IPostProps {
+    post: IPostModel
+}
+const PostComponent: FC<IPostProps> = ({post}) => {
+    const navigate = useNavigate();
+
     return (
         <div className={styles.postBlock}>
-            <h3>{id} - {title}</h3>
-            <p>{body}</p>
-            <p>UserID: {userId}</p>
+            <h3>{post.id} - {post.title}</h3>
+            <p>{post.body}</p>
+            <p>UserID: {post.userId}</p>
+            <button onClick={() => {
+                navigate(post.id.toString())
+            }}>Show comments of post</button>
         </div>
     );
 };

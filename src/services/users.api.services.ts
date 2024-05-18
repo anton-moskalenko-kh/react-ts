@@ -11,21 +11,12 @@ const axiosInstance = axios.create({
 const userApiService = {
     getAllUsers: (): Promise<AxiosResponse<IUserModel[]>> => {
         return axiosInstance.get('/users')
-    }
-}
-
-const postApiService = {
-    getAllPosts: (): Promise<AxiosResponse<IPostModel[]>> => {
-        return axiosInstance.get('/posts')
-    }
-}
-
-const commentApiService = {
-    getAllComments: (): Promise<AxiosResponse<ICommentModel[]>> => {
-        return axiosInstance.get('/comments')
+    },
+    getPostsOfUser: (userId: string): Promise<AxiosResponse<IPostModel[]>> => {
+        return axiosInstance.get(`/users/${userId}/posts`)
     }
 }
 
 export {
-    userApiService, postApiService, commentApiService
+    userApiService
 }
