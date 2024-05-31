@@ -1,0 +1,38 @@
+.formBlock {
+    padding-left: 40px;
+}
+
+.formBlock h3 {
+    font-size: 35px;
+}
+
+.formBlock form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formBlock form input {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.formBlock form button {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.statusBlock {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: red;
+}
+

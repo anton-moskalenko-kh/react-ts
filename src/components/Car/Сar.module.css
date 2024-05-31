@@ -1,0 +1,16 @@
+.carBlock {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: cadetblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.carBlock p {
+    margin: 0;
+    font-size: 18px;
+}
