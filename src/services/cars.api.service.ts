@@ -1,8 +1,7 @@
-import axios, {AxiosError} from "axios";
+import axios from "axios";
 import {ICarPaginatedModel} from "../models/ICarPaginatedModel";
 import {retrieveLocalStorageData} from "../helpers/helpers";
 import {ITokenObtainPair} from "../models/ITokenObtainPair";
-import {authService} from "./auth.api.service";
 
 const axiosInstance = axios.create({
     baseURL: 'http://owu.linkpc.net/carsAPI/v2',
@@ -17,18 +16,9 @@ axiosInstance.interceptors.request.use(request => {
 })
 
 const carsService = {
-    getCars: async () => {
-        try {
-            const response = await axiosInstance.get<ICarPaginatedModel>('/cars')
-            return response?.data
-        } catch (e) {
-            const axiosError = e as AxiosError;
-            if (axiosError?.response?.status === 401) {
-                const refreshToken = retrieveLocalStorageData<ITokenObtainPair>('tokenPair').refresh
-                await authService.refresh(refreshToken)
-                await carsService.getCars()
-            }
-        }
+    getCars: async (page: string): Promise<ICarPaginatedModel | undefined> => {
+        const response = await axiosInstance.get<ICarPaginatedModel>('/cars', {params: {page: page}})
+        return response.data
     }
 }
 

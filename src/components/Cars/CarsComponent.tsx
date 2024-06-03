@@ -10,7 +10,7 @@ const CarsComponent: FC<IPropsCars>  = ({cars}) => {
 
  return (
         <div className={styles.carsBlock}>
-            {cars.map(car => <CarComponent car={car}/>)}
+            {cars.map(car => <CarComponent key={car.id} car={car}/>)}
         </div>
     );
 };

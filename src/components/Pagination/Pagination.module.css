@@ -1,0 +1,16 @@
+.paginationBlock {
+    padding-left: 40px;
+}
+
+.paginationBlock button {
+    width: 150px;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid orange;
+    border-radius: 5px;
+    background-color: orange;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
