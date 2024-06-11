@@ -1,0 +1,19 @@
+.counterBlock {
+    padding-left: 30px;
+    font-size: 30px;
+}
+
+.counterBlock h3 {
+    margin: 20px 0;
+}
+
+.counterBlock button {
+    margin-right: 10px;
+    border: 1px solid ;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+}
