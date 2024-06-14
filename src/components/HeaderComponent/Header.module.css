@@ -1,0 +1,17 @@
+.headerBlock ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+.headerBlock ul li {
+    margin-right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.headerBlock ul li a {
+    text-decoration: none;
+}
+
+
